@@ -1,0 +1,125 @@
+.root{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+}
+
+.nav{
+    width: 20%;
+    padding-right: 5px;
+    display: block;
+    text-transform: uppercase;
+    
+}
+
+.remaining{
+    width: 80%;
+    display: flex;
+    font-size: 15px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    text-align: center; 
+    }
+
+  a{
+    text-decoration-line: none;
+   color: #4299f5;
+  }
+
+  .remaining{
+      background-color: #4299f5;
+      color: white;
+      display: block;
+      text-align: center;
+  }
+  
+  .remaining ul{
+    list-style-type: square;
+    text-align: left;
+  }
+  .btn{
+      color: #4299f5;
+      padding: 5px;
+      border-radius: 10px;
+  }
+  .earn-list{
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      color: #4299f5;
+      border: 1px solid #90c5e8;
+      box-shadow: 1px 1px 5px gray
+  }
+  #pic{
+      width: 100%;
+  }
+  .tag:hover{
+    background-color: #4299f5;
+    color: white;
+    } 
+
+  .tag {
+      display: block;
+      border: 0.5px solid #4299f5;
+      align-items: center;
+      padding: 8px;
+      font-weight: bold;
+        
+  }
+  .earn{
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+  }
+  
+ /*.spend{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+  }*/
+  table, th, td {
+    border-collapse: collapse;
+    color:white;
+    text-align: center;
+    border:1px solid white;
+
+      }
+  th{
+      background-color:white;
+      color: #4299f5;
+      border: 1px solid #4299f5;
+      height: 30px;
+  }
+  input{
+      background-color: white;
+      height: 22px;
+  }
+  .btn{
+      width: 100%;
+      background-color: #4299f5;
+      height: 25px;
+      color: white;
+  }
+  .btn:hover {
+    background-color: white;
+    color: #4299f5;
+  }
+  #code{
+    padding:3px;
+    color: #4299f5;
+    border-radius: 5px;
+  }
+ #generatedCode{
+     font-weight: bold;
+ }

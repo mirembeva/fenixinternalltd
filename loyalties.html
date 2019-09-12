@@ -1,0 +1,110 @@
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Fenix International</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="loyalties.css">
+   <link rel="icon" href="icon.png">
+   <script>
+      let code = '';
+      function onClick() {
+         const randomNum = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+         code = randomNum;
+         $('#generatedCode').text(code)
+         return randomNum;
+         }
+      
+   </script>      
+</head>
+<body>
+   <div class="root">
+      <div class="nav">
+            <div><img id="pic" src="./img/logo.png"></div>
+            <br><br>
+            <div>
+            <ul>
+                  <li><a class="tag" href="chat.html">Home</a></li>
+                  <li><a class="tag" href="loan.html">Loan & Savings</a></li>
+                  <li class="active"><a class="tag" href="loyalties.html">Loyalty Points</a></li>
+                  <li><a class="tag" href="https://www.fenixintl.com/">About us</a></li>
+                  <li><a class="tag" href="contact.asp">Contact Us</a></li>
+            </ul>
+            </div>   
+      </div>
+      <div class="remaining">
+         <div class="earn">
+            <h2>How to earn points;</h2>
+            <br>
+            <div class="earn-list">
+            <ul>
+               <li>For every payment made on time, earn 1 point.</li>
+               <li>Share a code to refer a friend and they join, earn 5 points.</li>
+               <li>For every new customer that is referred by a customer that you referred, earn 1 point.</li>
+               <li>For every loan payment completed before the deadline, earn 10 points.</li>
+               <li>Earn 20 points for following us on any of our social media accounts.</li>
+            </ul>
+            </div>
+            <br>
+            <h4>Get Earning!!!</h4>
+              <br>
+              <div class="generate"><button onclick="onClick()" id="code">Generate Invite code</button>  <span id="generatedCode"> </span></div>
+                
+         </div>
+         <br>
+         <div class="spend">
+            <!--Spend your points by either;
+            <ul>
+               <button class="btn"><a href="">Having 10% added to savings.</a></button>
+               <br> or <br>
+               <button class="btn"><a href="">Receiving 10% off next loan.</a></button>
+            </ul>-->
+            <h3>Spend your points</h3>
+            <br>
+            <div><label for="">Accumulated points</label> <input type="number" placeholder="Current points"></div><br>
+            <center><div>
+               
+            <table>
+               <tr>
+                  <th>Points required</th>
+                  <th>% gain on savings</th>
+                  <th>% discount on next loan</th>
+               </tr>
+               <tr>
+                  <td>50</td>
+                  <td><button class="btn">1.0%</button</td>
+                  <td><button class="btn">1.5%</button</td>
+               </tr>
+                <tr>
+                  <td>100</td>
+                  <td><button class="btn">2.0%</button</td>
+                  <td><button class="btn">2.5%</button</td>
+               </tr>
+               <tr>
+                     <td>200</td>
+                     <td><button class="btn">5.0%</button</td>
+                     <td><button class="btn">5.5%</button%</td>
+               </tr>
+               <tr>
+                     <td>350</td>
+                     <td><button class="btn">6.5%</button</td>
+                     <td><button class="btn">7.5%</button</td>
+               </tr>
+               <tr>
+                     <td>500</td>
+                     <td><button class="btn">8.0%</button</td>
+                     <td><button class="btn">8.5%</button</td>
+               </tr>
+               <tr>
+                     <td>Over 1000</td>
+                     <td><button class="btn">10%</button</td>
+                     <td><button class="btn">15%</button</td>
+               </tr>
+            </table>
+            </div></center>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

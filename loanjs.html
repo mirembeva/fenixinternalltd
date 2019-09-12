@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fenix International</title>
+    <script src="https://kit.fontawesome.com/6416f079ba.js"></script>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="icon" type="image" href="logo.png" size="16 x 16">
+    <link rel="stylesheet" href="loancss1.css">
+    <link rel="icon" type="image" href="icon.png" size="16 x 16">
+    <link rel="stylesheet" href="table.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+             <script type="text/javascript" src="PrudentialCustomers.json"></script>
+            <script>
+
+                  $(function() {
+                     var loans1 = {
+            "id": 001,
+            "Name": "Mirembe",
+            "Plan": "Home Eco2",
+            "Loan_Count": 1,
+            "Duration": "35Months",
+            "Daily_rate": 1000,
+            "Loan": 1000000,
+            "saving": 100,
+            "Out_Standing_Balance": 1000000,
+            "Daily_Rate": 1000
+            
+        }
+
+       
+        $('#name1').text(loans1['Name'])  
+        $('#total1').text(loans1['Loan']) 
+        $('#rate1').text(loans1['Daily_rate']) 
+        
+        var dailyPayment = loans1['Daily_rate']
+        $('#savings1').text((40/100)*dailyPayment)
+
+        var outstanding = loans1['Out_Standing_Balance']
+        $('#balance1').text(loans1['Loan'] - dailyPayment)
+
+
+
+        $('#name2').text(loans1['Name'])  
+        $('#total2').text(loans1['Loan']) 
+        $('#rate2').text(loans1['Daily_rate']) 
+        
+        var savings1 = loans1['Daily_rate']
+        $('#savings2').text((savings)+savings)
+
+        var outstanding1 = loans1['Out_Standing_Balance']
+        $('#balance2').text(outstanding - savings)
+
+                  });
+          
+
+            </script>
+
+</head>
+<body>
+<div class="left-menu">
+ <!-- <img width="100%" src="fimage.png"/><br/>-->
+ <img id="pic" src="./img/logo.png">
+  
+ <ul class="vr-nav">
+    <br><br><br>   
+        <!--<h4 class="head4">Fenix internation</h4><br/>-->
+        <!--<h2 id="full"> My Account</h2>-->
+        <li><a href="chat.html">HOME</a></li>
+        <li class="active"><a href="loan.html">LOAN & SAVINGS</a></li>
+        <li><a href="loyalties.html">LOYALTY POINTS</a></li>
+        <li><a href="https://www.fenixintl.com/">ABOUT US</a></li>
+        <li><a href="#c4">CONTACT US</a></li>
+ </ul>
+
+</div>
+
+<div class="vr-side">
+ <div class="tablediv">
+  
+
+  <table id="loans" border="2" width=80% height=50% cellspacing=10px cellpadding=20px>
+    
+   
+   <tr><th class="tr" colspan="2"> Loan Dash Board----- PLAN: Home Eco2</td></tr>
+   <tr><th class="td1">Total Loan</th><td class="td2" id="total1">1000000</td></tr>
+   <tr><th class="td1">Daily Rate</th><td class="td2" id="rate1">1000</td></tr>
+   <tr class="btnr"><th class="td1 btntd" ><button class="btn" ><a class="btnlink" href="loanjs.html"> PAY</a></button></th><td class="td2 btntd"><button class="btn"><a class="btnlink" href="loanjs.html">CANCEL</a></button></td></tr>
+   <tr><th class="td1">Total Savings</th><td class="td2" id="savings1"></td></tr>
+    <tr><th class="td1">Loan Balance</th> <td class="td2" id="balance1"></td></tr>  
+    </table>
+  
+
+ </div>
+                                        
+                                        
+</div>
+
+
+</body>
+</html>
